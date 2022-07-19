@@ -1,0 +1,41 @@
+.container {
+  padding: 0;
+}
+
+.intro {
+  height: 90vh;
+  background: url('/intro.jpg');
+  background-size: cover;
+  background-position: right center;
+}
+
+.text {
+  background: white;
+  width: 40%;
+  height: 100%;
+  padding: 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
