@@ -20,7 +20,13 @@
   justify-content: center;
 }
 
-.main {
+.title {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.featured {
+  padding: 4%;
 }
 
 .footer {
@@ -39,3 +45,13 @@
   flex-grow: 1;
 }
 
+.flexrow {
+  display: flex;
+}
+
+.doublegrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: scroll;
+}

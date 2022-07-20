@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": 2,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  }
+]
