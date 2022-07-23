@@ -1,12 +1,12 @@
-import styles from '../styles/Home.module.scss'
+import Header from '../components/Header.tsx'
+import Footer from '../components/Footer.tsx'
 
 const Layout = ({children}) => {
   return (
     <>
+      <Header />
       <main>{children}</main>
-      <footer className={styles.footer}>
-	<p>©2022 mockup</p>
-      </footer>
+      <Footer /> 
     </>
   )  
 }

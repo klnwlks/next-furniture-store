@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2%;
+  padding: 4%;
+  background: #e8e8e8;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.imgcontainer {
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

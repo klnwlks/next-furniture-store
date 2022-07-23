@@ -1,0 +1,23 @@
+#footer {
+    border-top: 1px solid #e8e8e8;
+    padding: 0 4%;
+    height: 35vh;
+
+    background: url('/footer.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 50%;
+}
+
+.copyright {
+}

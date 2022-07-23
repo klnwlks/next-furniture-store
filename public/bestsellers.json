@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": 2,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 7,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 8,
+    "name": "couch",
+    "price": 50,
+    "img": "/intro.jpg",
+    "rating": 4.5
+  }
+]

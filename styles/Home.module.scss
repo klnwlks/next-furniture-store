@@ -3,7 +3,7 @@
 }
 
 .intro {
-  height: 90vh;
+  height: 95vh;
   background: url('/intro.jpg');
   background-size: cover;
   background-position: right center;
@@ -23,6 +23,7 @@
 .title {
   text-align: center;
   margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .featured {
@@ -50,8 +51,24 @@
 }
 
 .doublegrid {
+  padding: 4%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
   overflow-x: scroll;
+  grid-auto-flow: column;
+}
+
+.grid {
+  padding: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 8%;
+  text-align: center;
 }

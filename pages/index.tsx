@@ -1,15 +1,26 @@
-import type { ReactElement } from 'react' 
-import type { IPreview } from '../types/types'
+import type { ReactElement, Key } from 'react' 
+import type { IPreview, ICategory } from '../types/types'
 
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Item from '../components/Item'
+import Category from '../components/Category'
 // import Image from 'next/image'
 
 import * as mockup_FEAT from '../public/featured.json'
+import * as mockup_CAT from '../public/categories.json'
+import * as mockup_BEST from '../public/bestsellers.json'
+
 import styles from '../styles/Home.module.scss'
 
-function Home(props: {featured: {default: IPreview[]}}) {
+interface IProps {
+  // i don't know why i have to put default
+  featured: { default: IPreview[] }
+  cat: {default: ICategory[]}
+  bestseller: {default: IPreview[]}
+}
+
+function Home(props: IProps) {
   return (
   <div className={styles.container}>
     <Head>
@@ -33,7 +44,7 @@ function Home(props: {featured: {default: IPreview[]}}) {
 
       <div className={styles.featured}>
 	<h1 className={styles.title}> 
-	  Curated Items
+	  Featured Furniture 
 	</h1>
 
 	<div className={styles.flexrow}>
@@ -53,8 +64,34 @@ function Home(props: {featured: {default: IPreview[]}}) {
 	  Browse by Categories
 	</h1>
 	<div className={styles.doublegrid}>
-      
+	  {props.cat.default.map((el: ICategory) => (
+	    <Category name={el.name} img={el.img} link={el.link} key={el.link as Key}/>
+	  ))} 
 	</div>
+      </div>
+
+      <div className={styles.bestsellercontainer}>
+	<h1 className={styles.title}>
+	  Bestseller Furniture
+	</h1>
+
+	<div className={styles.grid}>
+	  {props.bestseller.default.map((el: IPreview) => (
+	    <Item key={el.id}
+	      id={el.id} name={el.name}
+	      img={el.img} price={el.price}
+	      rating={el.rating}
+	    />
+	  ))}
+	</div>
+      </div>
+
+      <div className={styles.about}>
+	<img className={styles.logo} />
+
+	<p> 
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum justo tellus, nec pulvinar nulla volutpat a. Vestibulum nec posuere libero, vitae ultrices justo. Nunc in vehicula nisi. Integer at ante eleifend, consequat felis eget, imperdiet nisi. Pellentesque vitae tempor libero. Morbi at sapien tellus. Mauris eu tempus libero. Suspendisse viverra eros in massa ornare, sed accumsan ante faucibus.
+	</p>
       </div>
     </main>
   </div>
@@ -70,8 +107,11 @@ Home.getLayout = function getLayout(page: ReactElement) {
 export async function getStaticProps(){
   // had to do it this way to replicate grabbing data from an api
   const featured = await JSON.parse(JSON.stringify(mockup_FEAT))
+  const cat = await JSON.parse(JSON.stringify(mockup_CAT))
+  const bestseller = await JSON.parse(JSON.stringify(mockup_BEST))
+
   return {
-    props: { featured }
+    props: { featured, cat, bestseller }
   }
 }
 
