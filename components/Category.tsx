@@ -1,9 +1,10 @@
 import type { ICategory } from '../types/types'
+import type { FC } from 'react'
 import Link from 'next/link'
 
 import styles from './Category.module.scss'
 
-function Category(props: ICategory) {
+const Category: FC<ICategory> = (props: ICategory) => {
   return (
     <Link href={`/search/?=${props.link}`}>
       <div className={styles.container}>

@@ -1,8 +1,7 @@
-import type { ReactElement, Key } from 'react' 
+import type { Key, FC } from 'react' 
 import type { IPreview, ICategory } from '../types/types'
 
 import Head from 'next/head'
-import Layout from '../components/layout'
 import Item from '../components/Item'
 import Category from '../components/Category'
 // import Image from 'next/image'
@@ -14,13 +13,13 @@ import * as mockup_BEST from '../public/bestsellers.json'
 import styles from '../styles/Home.module.scss'
 
 interface IProps {
-  // i don't know why i have to put default
-  featured: { default: IPreview[] }
+  // get static prop returns array as objects, have to access default property to get an array
+  featured: {default: IPreview[]}
   cat: {default: ICategory[]}
   bestseller: {default: IPreview[]}
 }
 
-function Home(props: IProps) {
+const Home: FC<IProps> = ({featured, cat, bestseller}: IProps) => {
   return (
   <div className={styles.container}>
     <Head>
@@ -48,7 +47,7 @@ function Home(props: IProps) {
 	</h1>
 
 	<div className={styles.flexrow}>
-	  {props.featured.default.map((el: IPreview) => (
+	  {featured.default.map((el: IPreview) => (
 	    <Item key={el.id}
 	      id={el.id} name={el.name}
 	      img={el.img} price={el.price}
@@ -64,7 +63,7 @@ function Home(props: IProps) {
 	  Browse by Categories
 	</h1>
 	<div className={styles.doublegrid}>
-	  {props.cat.default.map((el: ICategory) => (
+	  {cat.default.map((el: ICategory) => (
 	    <Category name={el.name} img={el.img} link={el.link} key={el.link as Key}/>
 	  ))} 
 	</div>
@@ -76,7 +75,7 @@ function Home(props: IProps) {
 	</h1>
 
 	<div className={styles.grid}>
-	  {props.bestseller.default.map((el: IPreview) => (
+	  {bestseller.default.map((el: IPreview) => (
 	    <Item key={el.id}
 	      id={el.id} name={el.name}
 	      img={el.img} price={el.price}
@@ -95,12 +94,6 @@ function Home(props: IProps) {
       </div>
     </main>
   </div>
-  )
-}
-
-Home.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <Layout>{page}</Layout>
   )
 }
 

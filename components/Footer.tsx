@@ -1,6 +1,7 @@
 import styles from './Footer.module.scss'
+import type { FC } from 'react'
 
-function Footer() {
+const Footer: FC = () => {
   return (
     <div id={styles.footer}>
       <div className={styles.contact}>

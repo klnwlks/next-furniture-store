@@ -1,7 +1,8 @@
-import type {ReactNode} from 'react'
+import type {ReactNode, FC} from 'react'
 import styles from './Rating.module.scss'
 
-function Rating(props: {rating: number}){
+const Rating: FC<{rating: number}> = (props: {rating: number}) => {
+
   function setRating(){
     let starArr: ReactNode[] = []
     let starN = Math.round(props.rating)

@@ -1,8 +1,9 @@
 import type {IPreview} from '../types/types'
+import type {FC} from 'react'
 import styles from './Item.module.scss'
 import Rating from './Rating'
 
-function Item(props: IPreview){
+const Item: FC<IPreview> = (props: IPreview) => {
   return (
     <div className={styles.item}>
       <div className={styles.imgdiv}>

@@ -1,8 +1,8 @@
-import { useEffect, useState, useRef, RefObject } from 'react'
+import { useEffect, useState, useRef, RefObject, FC } from 'react'
 import styles from './Header.module.scss'
 import Link from 'next/link'
 
-function Header() {
+const Header: FC = () => {
   const [search, setSearch] = useState<String>()
   const [show, setShow] = useState<Boolean>(false)
 
@@ -53,6 +53,7 @@ function Header() {
 	    <img src='/icons/cart.png' />
 	  </div>
 	</Link>
+
       </div>
     </div>
   )
