@@ -2,6 +2,8 @@ import { useEffect, useState, useRef, RefObject, FC } from 'react'
 import styles from './Header.module.scss'
 import Link from 'next/link'
 
+import Cart from './Cart'
+
 const Header: FC = () => {
   const [search, setSearch] = useState<String>()
   const [show, setShow] = useState<Boolean>(false)
@@ -11,19 +13,20 @@ const Header: FC = () => {
 
   useEffect(() => {
     window.addEventListener('wheel', () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
 	headEl.current!.style.position = 'fixed'
 	headEl.current!.style.boxShadow = '0 8px 24px 0 rgba(0,0,0,.15)'
       } 
 
-      if (window.scrollY < 100) {
-	headEl.current!.style.position = 'absolute'
+      if (window.scrollY < 200) {
+	headEl.current!.style.position = 'static'
 	headEl.current!.style.boxShadow = 'none'
       } 
     })
 
+    // change later
     cart.current!.addEventListener('mouseover', () => { setShow(true) })
-    cart.current!.addEventListener('mouseexit', () => { setShow(false) })
+    cart.current!.addEventListener('mouseleave', () => { setShow(false) })
   }, [])
 
   return (
@@ -32,12 +35,12 @@ const Header: FC = () => {
 	<Link href='/'>
 	  <img className={styles.image} /> 
 	</Link>
-	<Link href='/account'>
+	<a href='/account'>
 	  <div className={styles.account}>
 	    <img src='/icons/account.png'/>
 	    <p>Account</p>
 	  </div>
-	</Link>
+	</a>
       </div>
 
       <div className={styles.right}>
@@ -48,12 +51,13 @@ const Header: FC = () => {
 	  <input type='image' value='submit' src='/icons/magnify.png' /> 
 	</form>
 
-	<Link href='/cart'>
-	  <div className={styles.cart} ref={cart}>
+	<div className={styles.cart} ref={cart}>
+	  <Link href='/cart'>
 	    <img src='/icons/cart.png' />
-	  </div>
-	</Link>
-
+	  </Link>
+	  {show ? <Cart cart={[]} /> : null}
+	</div>
+	
       </div>
     </div>
   )

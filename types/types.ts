@@ -11,3 +11,10 @@ export interface ICategory {
   img: String
   link: String
 }
+
+export interface ICartItem {
+  quantity: number
+  id: number
+  name: String
+  price: number
+}
