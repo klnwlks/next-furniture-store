@@ -1,0 +1,42 @@
+#account {
+  padding: 4%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  margin-top: 4%;
+}
+
+.purchases {
+  margin-right: 2%;
+  padding: 2%;
+  background: #e8e8e8;
+  width: 50%;
+  border-radius: 12px;
+
+  h2 { margin-bottom: 3%; }
+}
+
+.history {
+  margin-left: 2%;
+  padding: 2%;
+  background: #e8e8e8;
+  width: 50%;
+  border-radius: 12px;
+
+  h2 { margin-bottom: 3%; }
+}
+
+.item {
+  display: flex;
+
+  img {
+    width: 40%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-right: 4%;
+  }
+}
