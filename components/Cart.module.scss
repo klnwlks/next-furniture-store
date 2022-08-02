@@ -1,3 +1,37 @@
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    tranform: translateY(0);
+  }
+}
+
 #cart {
+  z-index: 99;
   position: absolute;
+  background: #242424;
+  padding: 2%;
+  border-radius: 12px;
+  color: white;
+  width: 30vw;
+  height: 40vh;
+  right: 1%;
+  animation: slide-up 500ms forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.checkout {
+  border-top: 1px solid gray;
+  width: 100%;
+  padding-top: 3%;
 }

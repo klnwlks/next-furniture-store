@@ -1,0 +1,33 @@
+#cart {
+  padding: 4%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 1% 4%;
+  h1 {
+    margin-bottom: 4%;
+  }
+}
+
+.empty {
+  padding: 1% 4%;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.checkout {
+  a {
+    transition: all 250ms;
+    font-size: 1.2em;
+    &:hover {
+      color: #986a50;
+      transform: scale(1.2);
+      transition: all 250ms;
+    }
+  }
+}

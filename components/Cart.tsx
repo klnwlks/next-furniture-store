@@ -1,28 +1,30 @@
-import type { FC, Key } from 'react'
+import type { FC } from 'react'
 import type { ICartItem } from '../types/types'
 
+import { useEffect } from 'react'
 import styles from './Cart.module.scss'
-
+import CartItem from './CartItem'
 
 const Cart: FC<{cart: ICartItem[]}> = (props: {cart: ICartItem[]}) => {
+  useEffect(() => {
+    console.log(props.cart.length)
+      })
   return (
     <div id={styles.cart}>
-      {props.cart.map((el: ICartItem) => (
-      <div className={styles.cartItem} key={el.id as Key}> 
-	<h3>{el.name}</h3>
-
-	<div className={styles.details}>
-	  <p>{el.quantity}</p>
-	  <p>{el.price}</p>
+      <div className={styles.container}>
+      {props.cart.length > 0 ? 
+      props.cart.map((el: ICartItem) => (
+	<CartItem 
+	  cart={el}
+	/>
+      )) :
+	<div className={styles.empty}>
+	  <h2> Your cart is empty </h2>
 	</div>
-
-	<a href={`/items/${el.id}`}>
-	  View this item
-	</a>
+      } 
       </div>
-      ))} 
 
-      <a href='/checkout'>
+      <a href='/checkout' className={styles.checkout}>
 	Checkout
       </a>
     </div>
