@@ -1,6 +1,6 @@
 import type {FC} from 'react'
 import type {ICartItem} from '../types/types'
-import styles from './CartItem.module.scss'
+import styles from '../styles/CartItem.module.scss'
 
 interface IProps {
   cart: ICartItem

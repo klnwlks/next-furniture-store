@@ -1,7 +1,7 @@
 import type {ICartItem} from '../types/types'
 
 import { useEffect, useState, useRef, RefObject, FC } from 'react'
-import styles from './Header.module.scss'
+import styles from '../styles/Header.module.scss'
 import Link from 'next/link'
 import Cart from './Cart'
 

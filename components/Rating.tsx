@@ -1,5 +1,5 @@
 import type {ReactNode, FC} from 'react'
-import styles from './Rating.module.scss'
+import styles from '../styles/Rating.module.scss'
 
 const Rating: FC<{rating: number}> = (props: {rating: number}) => {
   function setRating(){

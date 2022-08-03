@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import type { ICartItem } from '../types/types'
 
-import styles from './Cart.module.scss'
+import styles from '../styles/Cart.module.scss'
 import CartItem from './CartItem'
 
 const Cart: FC<{cart?: ICartItem[]}> = (props: {cart?: ICartItem[]}) => {

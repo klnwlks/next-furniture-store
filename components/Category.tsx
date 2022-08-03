@@ -1,7 +1,7 @@
 import type { ICategory } from '../types/types'
 import type { FC } from 'react'
 
-import styles from './Category.module.scss'
+import styles from '../styles/Category.module.scss'
 
 const Category: FC<ICategory> = (props: ICategory) => {
   return (
