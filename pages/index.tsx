@@ -31,13 +31,9 @@ const Home: FC<IProps> = ({featured, cat, bestseller}: IProps) => {
     <main className={styles.main}>
       <div className={styles.intro}>
 	<div className={styles.text}>
-	  <h1 className={styles.title}>
-	    This is a test
+	  <h1>
+	    Make your room stand out.
 	  </h1>
-
-	  <p className={styles.description}>
-	    A placeholder description
-	  </p>
 	</div>
       </div>
 
