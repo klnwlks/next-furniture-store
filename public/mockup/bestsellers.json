@@ -1,58 +1,58 @@
 [
   {
-    "id": 1,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
+    "id": 5,
+    "name": "Wall mounted shelf",
+    "price": 30,
+    "img": "/items/5.jpg",
     "rating": 4.3
   },
   {
-    "id": 2,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
-  },
-  {
-    "id": 3,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
-  },
-  {
-    "id": 4,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
-  },
-  {
-    "id": 5,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
-  },
-  {
     "id": 6,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
+    "name": "Wall mounted wood desk",
+    "price": 90,
+    "img": "/items/6.jpg",
+    "rating": 4.8
   },
   {
     "id": 7,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
-    "rating": 4.5
+    "name": "Blue plant pot",
+    "price": 20,
+    "img": "/items/7.jpg",
+    "rating": 4.4
   },
   {
     "id": 8,
-    "name": "couch",
+    "name": "Minimalist Wardrobe",
+    "price": 150,
+    "img": "/items/8.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": 9,
+    "name": "Wood finished dresser",
+    "price": 180,
+    "img": "/items/9.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "name": "Circular wool rug",
     "price": 50,
-    "img": "/intro.jpg",
+    "img": "/items/10.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": 11,
+    "name": "Bronze desk lamp",
+    "price": 40,
+    "img": "/items/11.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 12,
+    "name": "Teal Sofa",
+    "price": 200,
+    "img": "/items/12.jpg",
     "rating": 4.5
   }
 ]

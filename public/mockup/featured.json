@@ -1,23 +1,23 @@
 [
   {
-    "id": 1,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
+    "id": 3,
+    "name": "Mini Lamp",
+    "price": 30,
+    "img": "/items/f-3.jpg",
     "rating": 4.3
   },
   {
     "id": 2,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
+    "name": "Minimalist Shelf",
+    "price": 70,
+    "img": "/items/f-2.jpg",
     "rating": 4.5
   },
   {
-    "id": 3,
-    "name": "couch",
-    "price": 50,
-    "img": "/intro.jpg",
+    "id": 4,
+    "name": "Chair",
+    "price": 40,
+    "img": "/items/f-1.jpg",
     "rating": 4.5
   }
 ]

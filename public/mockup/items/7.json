@@ -1,0 +1,12 @@
+{
+  "id": 7,
+  "imgs": [
+    "/items/7.jpg"
+  ],
+  "price": 20,
+  "quantity": 1,
+  "name": "Blue plant pot",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}
+

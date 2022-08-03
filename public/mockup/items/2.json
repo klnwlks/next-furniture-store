@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "imgs": [
+    "/items/2.jpg"
+  ],
+  "price": 70,
+  "quantity": 1,
+  "name": "Minimalist Shelf",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}

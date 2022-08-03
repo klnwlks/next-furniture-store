@@ -1,0 +1,12 @@
+{
+  "id": 11,
+  "imgs": [
+    "/items/11.jpg"
+  ],
+  "price": 40,
+  "quantity": 1,
+  "name": "Bronze desk lamp",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}
+

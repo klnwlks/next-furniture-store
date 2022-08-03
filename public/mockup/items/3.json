@@ -1,0 +1,11 @@
+{
+  "id": 3,
+  "imgs": [
+    "/items/3.jpg"
+  ],
+  "price": 40,
+  "quantity": 1,
+  "name": "Mini Lamp",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}

@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "imgs": [
+    "/items/1-1.png",
+    "/items/1-2.png"
+  ],
+  "price": 200,
+  "quantity": 1,
+  "name": "Wooden Table",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}

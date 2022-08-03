@@ -1,0 +1,12 @@
+{
+  "id": 10,
+  "imgs": [
+    "/items/10.jpg"
+  ],
+  "price": 50,
+  "quantity": 1,
+  "name": "Circular wool rug",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}
+

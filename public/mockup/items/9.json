@@ -1,0 +1,12 @@
+{
+  "id": 9,
+  "imgs": [
+    "/items/9.jpg"
+  ],
+  "price": 180,
+  "quantity": 1,
+  "name": "Wood finished dresser",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}
+

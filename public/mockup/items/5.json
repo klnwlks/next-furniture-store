@@ -1,0 +1,11 @@
+{
+  "id": 5,
+  "imgs": [
+    "/items/5.jpg"
+  ],
+  "price": 30,
+  "quantity": 1,
+  "name": "Wall mounted shelf",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare placerat purus blandit ornare. Mauris non justo nec nibh efficitur laoreet.",
+  "stock": 9
+}

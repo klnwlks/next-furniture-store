@@ -5,48 +5,38 @@
     "link": "shelves"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Lamps and Lighting",
+    "img": "/categories/floor-lamp.png",
+    "link": "lighting"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Couches",
+    "img": "/categories/sofa.png",
+    "link": "couches"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Rugs and Flooring",
+    "img": "/categories/rug.png",
+    "link": "rugs"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Wardrobes and Dressers",
+    "img": "/categories/wardrobe.png",
+    "link": "wardrobes"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Plant pots",
+    "img": "/categories/flower.png",
+    "link": "gardening"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Chairs",
+    "img": "/categories/chair-rolling.png",
+    "link": "chairs"
   },
   {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
-  },
-  {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
-  },
-  {
-    "name": "Shelves",
-    "img": "/categories/shelf.png",
-    "link": "shelves"
+    "name": "Desks and Tables",
+    "img": "/categories/desk.png",
+    "link": "tables"
   }
 ]
