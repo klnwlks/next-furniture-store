@@ -5,25 +5,17 @@ import Head from 'next/head'
 import CartItem from '../components/CartItem'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Cart-page.module.scss' 
-import mockup from '../public/mockup/cart.json'
 
 const Cart: FC = () => {
   const [cart, setCart] = useState<ICartItem[]>(Array);
 
   useEffect(() => {
     if (localStorage.cart) {
-      setCart(JSON.parse(localStorage.cart)) } else {
-      setCart(mockup.data)
+      setCart(JSON.parse(localStorage.cart)) 
+    } else {
+      setCart([])
     }
   }, [])
-
-  if (typeof window != 'undefined'){
-    useEffect(() => {
-      if (localStorage.cart){
-      setCart(JSON.parse(localStorage.cart))
-      }
-    }, [localStorage.cart])
-  }
 
   const remove = (id: number) => {
     let temp = [...cart]
@@ -32,16 +24,7 @@ const Cart: FC = () => {
     if (temp[i].quantity! > 1) temp[i].quantity!--
     else temp.splice(i, 1)
 
-    setCart(temp)
-  }
-
-  const changeQty = (n: number, id: number) => {
-    let temp = [...cart]
-    let i = temp.findIndex((c: ICartItem) => c.id == id)
-    if (n) temp[i].quantity!++ 
-    else temp[i].quantity!--
-
-    if (temp[i].quantity! < 1) remove(id)
+    localStorage.cart = JSON.stringify(temp)
     setCart(temp)
   }
 
