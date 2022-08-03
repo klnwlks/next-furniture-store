@@ -1,20 +1,16 @@
 import type { FC } from 'react'
 import type { ICartItem } from '../types/types'
 
-import { useEffect } from 'react'
 import styles from './Cart.module.scss'
 import CartItem from './CartItem'
 
-const Cart: FC<{cart: ICartItem[]}> = (props: {cart: ICartItem[]}) => {
-  useEffect(() => {
-    console.log(props.cart.length)
-      })
+const Cart: FC<{cart?: ICartItem[]}> = (props: {cart?: ICartItem[]}) => {
   return (
     <div id={styles.cart}>
       <div className={styles.container}>
-      {props.cart.length > 0 ? 
-      props.cart.map((el: ICartItem) => (
-	<CartItem 
+      {props.cart ? 
+      props.cart.map((el: ICartItem, index: number) => (
+	<CartItem key={index}
 	  cart={el}
 	/>
       )) :

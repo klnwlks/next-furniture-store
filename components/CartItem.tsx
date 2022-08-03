@@ -12,7 +12,7 @@ const CartItem: FC<IProps> = ({cart, remove}: IProps) => {
     <div className={styles.item}>
       <a href={`/products/${cart.id}`}>
       {cart.img ? 
-	<img src={cart.img as string} />
+	<img src={cart.img as string} alt={cart.name as string}/>
 	:
 	null
       }
