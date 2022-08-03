@@ -48,6 +48,13 @@
 
 .flexrow {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .doublegrid {
@@ -55,14 +62,20 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
-  overflow-x: scroll;
-  grid-auto-flow: column;
+  overflow-x: visible;
+  grid-auto-flow: row;
 }
 
 .grid {
   padding: 4%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.logo {
+  margin: 2%;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 .about {
