@@ -13,8 +13,25 @@ export interface ICategory {
 }
 
 export interface ICartItem {
-  quantity: number
+  quantity?: number
+  img?: String
   id: number
   name: String
   price: number
+}
+
+export interface IUser {
+  name: String
+  history: ICartItem[]
+  purchases: ICartItem[]
+}
+
+export interface IProduct {
+  id: number
+  imgs: String[]
+  price: number
+  quantity: number
+  name: String
+  desc: String
+  stock: number
 }
