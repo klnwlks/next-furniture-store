@@ -43,7 +43,6 @@ const Product: FC<IProps> = ({product}: IProps) => {
 	{product.imgs.map((el: String, index: number) => (
 	  <img src={el as string} 
 	    key={el as Key}
-	    style={{display: index == 0 ? 'block' : 'none'}}
 	    alt={product.name as string}
 	    />
 	))}

@@ -7,6 +7,9 @@
   justify-content: space-between;
   padding: 0 4%;
   margin-top: 4%;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .purchases {
@@ -17,6 +20,10 @@
   border-radius: 12px;
 
   h2 { margin-bottom: 3%; }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 4%;
+  }
 }
 
 .history {
@@ -27,6 +34,12 @@
   border-radius: 12px;
 
   h2 { margin-bottom: 3%; }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+    padding: 4%;
+  }
 }
 
 .item {

@@ -32,7 +32,7 @@ const Header: FC = () => {
   }, [])
 
   useEffect(() => {
-    setCart(JSON.parse(localStorage.cart))
+    if (localStorage.cart) setCart(JSON.parse(localStorage.cart))
   }, [typeof window != 'undefined' ? localStorage.cart : null])
 
   return (

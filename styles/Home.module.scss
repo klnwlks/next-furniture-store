@@ -7,6 +7,10 @@
   background: url('/intro.jpg');
   background-size: cover;
   background-position: right center;
+  @media only screen and (max-width: 600px) {
+    height: 50vh;
+    width: 100vw;
+  }
 }
 
 .text {
@@ -22,7 +26,10 @@
   h1 {
     font-size: 4em;
     font-weight: 400;
-    font-family: Poppins
+    font-family: Poppins;
+    @media only screen and (max-width: 600px) {
+      font-size: 2em;
+    }
   }
 }
 
@@ -55,6 +62,9 @@
 .flexrow {
   display: flex;
   justify-content: space-evenly;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 }
 
 .categories {
@@ -70,12 +80,18 @@
   grid-template-columns: repeat(5, 1fr);
   overflow-x: visible;
   grid-auto-flow: row;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid {
   padding: 4%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  @media only screen and (max-width: 600px)  {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .logo {
@@ -90,4 +106,9 @@
   align-items: center;
   padding: 4% 8%;
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    p {
+      font-size: 0.7em;
+    }
+  }
 }

@@ -4,14 +4,21 @@
 
 .title {
   margin-bottom: 2%;
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 .container {
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 600px) { 
+    text-align: center;
+  }
 }
 
 .form {
   width: 50%;
+  font-size: 1.2em;
   input { 
     font-size: 1em;
     padding: 2% 3%;
@@ -34,10 +41,12 @@
       transition: background 250ms ease;
     }
   }
-}
 
-.form {
-  font-size: 1.2em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 10%;
+    .reset { font-size: 0.7em; }
+  }
 }
 
 .imgcontainer {
@@ -46,6 +55,9 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+  }
+  @media only screen and (max-width: 600px)  {
+    display: none;
   }
 }
 

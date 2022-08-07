@@ -11,11 +11,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 600px) {
+      color: white;
+      font-size: 0.9em;
+    }
 }
 
 .contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2%;
     height: 50%;
 }
